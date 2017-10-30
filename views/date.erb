@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Today</h1>
-        <% date = Time.new %>
-        <p>The date is Monday, October 30, 2017</p>
+        <% date = Time.new.strftime("%A, %B %d, %Y") %>
+        <p>The date is <%=date%></p>
     </body>
 </html>
